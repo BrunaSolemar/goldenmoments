@@ -1,0 +1,23 @@
+
+/* Media Query para telas menores que 768px (tablets) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+
+/* Media Query para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    header {
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
