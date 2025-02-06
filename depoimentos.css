@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+.titulo{
+    position: absolute;
+    z-index: 2;
+    margin: 20px;
+    background-color: rgb(167, 210, 248);
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+
+    display: block !important;
+    justify-content: initial !important;
+    align-items: initial !important;
+}
+
+.depoimentos{
+    max-width: 600px;
+    width: 900px;
+    padding: 10px;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.carrossel{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    
+}
+
+.slides{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    width: 100%;
+    padding: 0px;
+    flex-shrink: 0;
+    transition: opacity 0.5s;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    background-color: rgba(128, 188, 244, 0.842);
+    z-index: 2;
+}
+
+.navegacao{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.navegacao label{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: rgba(1, 105, 217, 0.825);
+    transition: background 0.3s;
+    border-radius: 50%;
+    
+}
+
+/*contorle dos slides*/
+#slide1:checked ~ .slides{
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides{
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides{
+    transform: translateX(-200%);
+}
+
+#slide1:checked ~ .navegacao label:nth-child(1),
+#slide2:checked ~ .navegacao label:nth-child(2),
+#slide3:checked ~ .navegacao label:nth-child(3){
+    background: #555;
+}
+
+/*esconde os radio buttons*/
+input[type="radio"]{
+    display: none;
+}
+
+.slide h4{
+    font-size: 25px;
+    color: black;
+}
