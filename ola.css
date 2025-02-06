@@ -7,6 +7,7 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;  
+    overflow: hidden;
 }
 
 img{
@@ -52,7 +53,7 @@ div.texto{
     width: 100%;
     font-size: 70px;
     z-index: 2;
-    position: relative;
+    position: absolute;
     color: rgb(86, 62, 27);
 }
 
