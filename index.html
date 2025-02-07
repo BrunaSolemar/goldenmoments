@@ -12,7 +12,15 @@
     <img src="3.jpg" alt="capa">
     <header>
         <span id="burguer" class="material-icons" onclick="clickMenu()"></span>
-        <menu id="itens"></menu>
+        <menu id="itens">
+            <ul>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
      
         <nav class="desktop-menu">
             <ul>
@@ -38,7 +46,7 @@
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
             } else {
-                itens.style.display ='b'
+                itens.style.display ='block'
             }
         }
     </script>
