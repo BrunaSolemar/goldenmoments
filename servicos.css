@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 img{
     position: absolute;
     top: 0;
@@ -13,6 +21,7 @@ img{
     opacity: 0.5;
     height: 100%;
     width: 100%;
+   
 }
 
 h1{

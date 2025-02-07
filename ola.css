@@ -24,23 +24,20 @@ img{
 
 header{
     text-align: center;
-    margin: 20px;
+    margin: 30px;
     background-color: blanchedalmond;
     position: relative;
     z-index: 2;
+    padding: 10px;
+    font-size: 25px;
+    
     
 }
 
-nav > a{
-    z-index: 2;
-    margin-top: 10px;
-    padding: 50px;
-    font-size: 25px;
-    cursor: pointer;
-    position: relative;
-    color: rgb(123, 74, 1);
-    
-       
+nav > ul > a{
+    margin: 50px;
+    padding: 40px;
+    color: rgb(86, 62, 27);
 }
 
 div.texto{
@@ -55,6 +52,7 @@ div.texto{
     z-index: 2;
     position: absolute;
     color: rgb(86, 62, 27);
+   
 }
 
 
