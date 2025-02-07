@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden Moments Eventos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="ola.css">
     <link rel="stylesheet" href="mediaquery.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <img src="3.jpg" alt="capa">
     <header>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">Menu</span>
+        <menu id="itens"></menu>
      
         <nav class="desktop-menu">
-            <a href="sobrenos.html">Sobre Nós</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="depoimentos.html">Depoimentos</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="contato.html">Contato</a>
+            <ul>
+                <a href="sobrenos.html">Sobre Nós</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="depoimentos.html">Depoimentos</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </ul>
         </nav>
     </header>
     <div class="texto">Golden Moments Eventos<br>Realizando seus melhores sonhos</div>
   
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display ='b'
+            }
+        }
+    </script>
 </body>
 </html>
