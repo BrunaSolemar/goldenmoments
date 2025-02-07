@@ -1,17 +1,3 @@
-
-/* Media Query para telas menores que 768px (tablets) */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    header {
-        padding: 15px;
-        text-align: center;
-        max-width: 100%;
-    }
-}
-
 /* Oculta o checkbox */
 #menu-toggle {
     display: none;
@@ -82,22 +68,3 @@
         display: none; /* Esconde o menu normal em telas pequenas */
     }
 }
-
-
-/* Media Query para telas menores que 480px (smartphones) */
-@media (max-width: 480px) {
-    header {
-        font-size: 12px;
-        padding: 10px;
-        max-width: 100%;
-    }
-
-    .container {
-        width: 95%;
-    }
-
-    .texto {
-        font-size: 40px; /* Reduz o tamanho do texto para caber melhor */
-    }
-}
-
