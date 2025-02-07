@@ -13,7 +13,13 @@
     
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 779px) {
+    body{
+        font-size: 14xp;
+    }
+    div.texto{
+        font-size: 10vw;
+    }
     nav.desktop-menu{
         display: none;
     }
