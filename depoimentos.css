@@ -52,11 +52,17 @@ img{
 }
 
 .depoimentos{
-    max-width: 800px;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
     width: 600px;;
-    
-    margin: 30px;
+    margin: 0;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+section * {
+    max-width: 100%;  /* Impede que elementos internos ultrapassem a largura da section */
+    box-sizing: border-box; /* Garante que padding e border não afetem a largura total */
 }
 
 .carrossel{
