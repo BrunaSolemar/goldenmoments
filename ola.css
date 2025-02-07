@@ -1,59 +1,102 @@
-*{
+/* Remove estilos padrão */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    position: absolute;
-    height: 100%;
-    width: 100%;  
-    overflow: hidden;
+
+/* Oculta o checkbox */
+#menu-toggle {
+    display: none;
 }
 
-img{
-    position: absolute;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-
-}
-
-header{
-    text-align: center;
-    margin: 20px;
-    background-color: blanchedalmond;
-    position: relative;
-    z-index: 2;
-    
-}
-
-nav > a{
-    z-index: 2;
-    margin-top: 10px;
-    padding: 30px;
-    font-size: 25px;
+/* Estiliza o botão hambúrguer */
+.menu-btn {
+    font-size: 30px;
     cursor: pointer;
-    position: relative;
-    color: rgb(123, 74, 1);
-    
-       
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    background: blanchedalmond;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: none; /* Só aparece em telas pequenas */
 }
 
-div.texto{
+/* Estiliza o menu lateral */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Esconde o menu inicialmente */
+    width: 250px;
+    height: 100%;
+    background: blanchedalmond;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    font-size: 70px;
-    z-index: 2;
-    position: absolute;
-    color: rgb(86, 62, 27);
+    padding-top: 50px;
+    transition: left 0.3s ease-in-out;
+    z-index: 4; /* Garante que o menu fique acima de tudo */
 }
 
+/* Estiliza os links do menu */
+.menu a {
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(123, 74, 1);
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Efeito de hover nos links */
+.menu a:hover {
+    background: rgb(255, 220, 180);
+}
+
+/* Botão de fechar */
+.close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Mostra o menu ao clicar no checkbox */
+#menu-toggle:checked ~ .menu {
+    left: 0;
+}
+
+/* Esconde o menu hambúrguer e mostra a navegação normal em telas grandes */
+@media (min-width: 769px) {
+    .menu-btn,
+    .menu {
+        display: none;
+    }
+    
+    .desktop-menu {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        background-color: blanchedalmond;
+    }
+    
+    .desktop-menu a {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(123, 74, 1);
+    }
+}
+
+/* Mostra o menu hambúrguer apenas em telas pequenas */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+}
