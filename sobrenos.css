@@ -6,6 +6,9 @@
 
 img{
     position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
     z-index: 1;
     height: 100%;
     width: 100%;
@@ -33,11 +36,12 @@ h2{
 }
 
 body{
-    
+    position: relative;
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
     text-align: center;
     overflow: hidden;
 }
@@ -53,6 +57,9 @@ div.texto{
     margin-left: 70px;
     max-width: 800px;
     font-size: 30px;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
     
 }
 
