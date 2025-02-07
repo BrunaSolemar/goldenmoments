@@ -157,33 +157,29 @@ input[type="radio"]{
 
 
 /* Media Query para telas menores que 768px (tablets) */
-@media screen and (min-width: 780px) {
-    span#burguer{
-        display: none;
-    }
-    menu{
-        display: none;
-    }
-    nav.desktop-menu{
-        display: block;
-    }
-    
-}
-
 @media screen and (max-width: 779px) {
-    body{
-        font-size: 14xp;
+    body {
+        font-size: 14px;
     }
-    div.texto{
-        font-size: 10vw;
+
+    /* Ajuste de font-size responsivo para a .depoimentos */
+    .depoimentos {
+        width: 100%;
+        font-size: 4vw; /* Ajuste o tamanho da fonte conforme necessário */
+        padding: 10px;  /* Ajuste o padding para telas pequenas */
     }
-    nav.desktop-menu{
+
+    /* Ajuste do texto dentro da section.depoimentos */
+    .depoimentos p, .depoimentos h4 {
+        font-size: 4vw;  /* Reduza o tamanho das fontes em telas pequenas */
+    }
+
+    nav.desktop-menu {
         display: none;
     }
-    menu{
+    menu {
         display: none;
     }
-    
 }
 
 
