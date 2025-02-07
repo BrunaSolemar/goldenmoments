@@ -56,10 +56,44 @@ div.texto{
     text-align: center;
     margin-left: 70px;
     max-width: 800px;
-    font-size: 30px;
+    font-size: 1.8vw;
     height: 100vh;
     width: 100%;
     margin: 0;
     
 }
+
+
+
+
+/* Media Query para telas menores que 768px (tablets) */
+@media screen and (min-width: 780px) {
+    span#burguer{
+        display: none;
+    }
+    menu{
+        display: none;
+    }
+    nav.desktop-menu{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 779px) {
+    body{
+        font-size: 14xp;
+    }
+    div.texto{
+        font-size: 10vw;
+    }
+    nav.desktop-menu{
+        display: none;
+    }
+    menu{
+        display: none;
+    }
+    
+}
+
 
