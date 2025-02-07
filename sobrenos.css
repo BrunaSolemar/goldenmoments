@@ -40,10 +40,11 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
     text-align: center;
-    overflow: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+    
 }
 
 div.texto{
@@ -57,7 +58,6 @@ div.texto{
     margin-left: 70px;
     max-width: 800px;
     font-size: 1.8vw;
-    height: 100vh;
     width: 100%;
     margin: 0;
     
