@@ -9,8 +9,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    height: 100%;
+    position: relative;
+    flex-direction: column;
     width: 100%;
     overflow-y: auto;
     min-height: 100vh;
