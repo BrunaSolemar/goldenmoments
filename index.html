@@ -11,7 +11,7 @@
 <body onresize="mudouTamanho()">
     <img src="3.jpg" alt="capa">
     <header>
-        <span id="burguer" class="material-icons" onclick="clickMenu()"></span>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
                 <li><a href="sobrenos.html">Sobre Nós</a></li>
@@ -36,12 +36,16 @@
   
     <script>
         function mudouTamanho(){
-            if(window.innerWidth >= 768){
-                itens.style.display = 'block'
-            }else{
-                itens.style.display = 'none'
-            }
-        }
+    if(window.innerWidth >= 768){
+        document.getElementById('itens').style.display = 'block';
+        document.querySelector('nav.desktop-menu').style.display = 'block';
+        document.getElementById('burguer').style.display = 'none'; // Adicionado
+    }else{
+        document.getElementById('itens').style.display = 'none';
+        document.querySelector('nav.desktop-menu').style.display = 'none';
+        document.getElementById('burguer').style.display = 'block'; // Adicionado
+    }
+}
         function clickMenu(){
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
