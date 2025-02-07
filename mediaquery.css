@@ -59,12 +59,35 @@
 }
 
 /* Exibe o botão hambúrguer apenas em telas pequenas */
+
+@media (min-width: 769px) {
+    .menu-btn,
+    .menu {
+        display: none;
+    }
+    
+    .desktop-menu {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        background-color: blanchedalmond;
+    }
+    
+    .desktop-menu a {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(123, 74, 1);
+    }
+}
+
+/* Mostra o menu hambúrguer apenas em telas pequenas */
 @media (max-width: 768px) {
     .menu-btn {
         display: block;
     }
     
-    nav {
-        display: none; /* Esconde o menu normal em telas pequenas */
+    .desktop-menu {
+        display: none;
     }
 }
