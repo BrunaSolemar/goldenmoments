@@ -6,133 +6,68 @@
 
 img{
     position: absolute;
-    background-size: cover;
-    top: 0;
-    left: 0;
     z-index: 1;
+    opacity: 0.3;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
     object-fit: cover;
-}
-
-h1{
-    position: relative !important;
-    width: 100% !important;
-    z-index: 2;
-    background-color: blanchedalmond;
-    font-size: 70px;
-    text-align: center;
-    padding: 10px;
-    color: rgb(86, 62, 27);
-}
-
-h2{
-    font-size: 45px;
-    padding-top: 20px;
-    margin-top: 50px;
-    position: relative;
-    z-index: 2;
-    color: rgb(86, 62, 27);
+    top: 0;
+    left: 0;
 }
 
 body{
     position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+
+h1{
+    position: relative;
+    background-color: rgb(146, 97, 24);
+    text-align: center;
+    color: blanchedalmond;
+    z-index: 2;
+    margin: 40px;
+    padding: auto;
+    width: 100%;
+    font-size: 3vw;
+    padding: auto;
+    
+  
+}
+
+.desktop-menu{
+    margin: auto;
+    padding: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgb(146, 97, 24);
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+nav > ul > a{
+    font-size: 25px;
+    padding: 40px;
+    margin: 50px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.texto{
+    position: relative;
+    z-index: 2;
+    font-size: 1.8vw;
+    text-align: justify;
+    background-color: rgba(146, 97, 24, 0.171);
+    justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
-    overflow-y: auto;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-    height: 100%;
-
-    
+    width: 70%;
 }
-
-div.texto{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    margin-left: 70px;
-    max-width: 800px;
-    font-size: 1.8vw;
-    width: 100%;
-    margin: 0;
-    
-}
-
-header{
-    text-align: center;
-    padding: 15px;
-    margin: 0;
-    background-color: blanchedalmond;
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    font-size: 25px;
-    
-    
-}
-span#burguer{
-    background-color: rgb(228, 139, 5);
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-
-}
-
-span#burguer:hover{
-    background-color: wheat;
-    color: black;
-}
-
-menu{
-    display: none;
-}
-
-menu > ul{
-    list-style-type: none;
-}
-
-
-
-/* Media Query para telas menores que 768px (tablets) */
-@media screen and (min-width: 780px) {
-    span#burguer{
-        display: none;
-    }
-    menu{
-        display: none;
-    }
-    nav.desktop-menu{
-        display: block;
-    }
-    
-}
-
-@media screen and (max-width: 779px) {
-    body{
-        font-size: 14xp;
-    }
-    div.texto{
-        font-size: 1.3vw;
-    }
-    nav.desktop-menu{
-        display: none;
-    }
-    menu{
-        display: none;
-    }
-    
-}
-
-
