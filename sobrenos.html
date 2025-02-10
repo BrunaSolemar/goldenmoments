@@ -8,12 +8,55 @@
     <link rel="stylesheet" href="mediaquery.css">
 </head>
 <body>
+    <body onresize="mudouTamanho()"></body>
     <img src="5.jpg" alt="sobrenos">
+    <header>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+     
+        <nav class="desktop-menu">
+            <ul>
+                <a href="sobrenos.html">Sobre Nós</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="depoimentos.html">Depoimentos</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </ul>
+        </nav>
+    </header>
     <h1>Sobre Nós</h1>
     <h2>Sobre a Golden Moments Eventos:</h2>
     <div class="texto">
         
             <p>Na Golden Moments Eventos, transformamos sonhos em realidade! Somos especialistas na organização e realização de eventos inesquecíveis, desde casamentos elegantes e festas corporativas até aniversários e celebrações personalizadas. Com uma equipe experiente e apaixonada, cuidamos de cada detalhe para que seu evento seja único e memorável. Nossa missão é proporcionar momentos especiais, oferecendo soluções criativas, decorações sofisticadas e um serviço impecável. Seja qual for a ocasião, estamos aqui para tornar cada instante dourado e inesquecível!</p>
     </div>
+    <script>
+        function mudouTamanho(){
+    if(window.innerWidth >= 768){
+        document.getElementById('itens').style.display = 'block';
+        document.querySelector('nav.desktop-menu').style.display = 'block';
+        document.getElementById('burguer').style.display = 'none'; // Adicionado
+    }else{
+        document.getElementById('itens').style.display = 'none';
+        document.querySelector('nav.desktop-menu').style.display = 'none';
+        document.getElementById('burguer').style.display = 'block'; // Adicionado
+    }
+}
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display ='block'
+            }
+        }
+    </script>
 </body>
 </html>
