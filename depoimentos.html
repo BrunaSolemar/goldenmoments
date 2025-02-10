@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="depoimentos.css">
     <link rel="stylesheet" href="mediaquery.css">
 </head>
-<body>
-    <body onresize="mudouTamanho()">
+<body onresize="mudouTamanho()">
+    
     <img src="6.jpg" alt="">
 
     <header>
@@ -63,5 +63,27 @@
                 </div>
         </div>
     </section>
+
+    <script>
+        function mudouTamanho(){
+    if(window.innerWidth >= 768){
+        document.getElementById('itens').style.display = 'block';
+        document.querySelector('nav.desktop-menu').style.display = 'block';
+        document.getElementById('burguer').style.display = 'none'; // Adicionado
+    }else{
+        document.getElementById('itens').style.display = 'none';
+        document.querySelector('nav.desktop-menu').style.display = 'none';
+        document.getElementById('burguer').style.display = 'block'; // Adicionado
+    }
+}
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display ='block'
+            }
+        }
+    </script>
+
 </body>
 </html>
