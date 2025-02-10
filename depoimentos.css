@@ -184,6 +184,30 @@ input[type="radio"]{
         padding: 20px;   /* Padding para garantir espaçamento */
     }
 
+    .slides{
+        width: 300%;
+    }
+
+    .slide > p{
+        font-size: 5vw;
+        width: auto;
+        margin-left: 0;
+        padding: 0 10px;
+
+    }
+
+    .slide > h4{
+        font-size: 4vw;
+        margin-top: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .navegacao label{
+        width: 15px;
+        height: 15px;
+    }
+
     /* Ajuste do texto dentro da section.depoimentos */
     .depoimentos p, .depoimentos h4 {
         font-size: 4vw;  /* Ajuste o tamanho da fonte para textos grandes */
