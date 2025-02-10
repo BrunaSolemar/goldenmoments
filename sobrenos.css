@@ -29,7 +29,7 @@ h1{
     text-align: center;
     color: blanchedalmond;
     z-index: 2;
-    margin: 40px;
+    margin-top: 50px;
     padding: auto;
     width: 100%;
     font-size: 3vw;
@@ -39,8 +39,6 @@ h1{
 }
 
 .desktop-menu{
-    margin: auto;
-    padding: auto;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -48,6 +46,7 @@ h1{
     background-color: rgb(146, 97, 24);
     width: 100%;
     font-size: 20px;
+    margin-top: 10px;
     
 }
 
@@ -60,14 +59,11 @@ nav > ul > a{
 }
 
 .texto{
-    position: relative;
+    position: absolute;
     z-index: 2;
     font-size: 1.8vw;
     text-align: justify;
     background-color: rgba(146, 97, 24, 0.171);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    display: block;
     width: 70%;
 }
