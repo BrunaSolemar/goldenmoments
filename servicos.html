@@ -8,7 +8,33 @@
     <link rel="stylesheet" href="mediaquery.css">
 </head>
 <body>
+    <body onresize="mudouTamanho()"></body>
+
     <img src="11.jpeg" alt="servicos">
+
+    <header>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+               
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+     
+        <nav class="desktop-menu">
+            <ul>
+                <a href="sobrenos.html">Sobre Nós</a>
+                
+                <a href="depoimentos.html">Depoimentos</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </ul>
+        </nav>
+    </header>
+
     <h1>Serviços da Golden Moments Eventos</h1>
     <h2>1. Organização de Casamentos</h2>
     <p>Criamos casamentos inesquecíveis, com atenção a todos os detalhes: 
