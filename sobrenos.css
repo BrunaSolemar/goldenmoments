@@ -57,11 +57,21 @@ nav > ul > a{
     color: blanchedalmond;
     text-align: center;
 }
-
-.texto > p{
+.texto{
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.texto > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex; 
     font-size: 1.8vw;
     text-align: justify;
