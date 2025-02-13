@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: absolute;
+    height: 100vh;
+    width: 100%;  
+    background-color: bisque;
+}
+
+
+
+header{
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    background-color: blanchedalmond;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    font-size: 25px;   
+}
+
+nav > ul > a{
+    font-size: 25px;
+    padding: 40px;
+    margin: 50px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+h1{
+    position: relative;
+    z-index: 2;
+    font-size: 2.5vw;
+    text-align: center;
+    color: rgb(86, 62, 27);
+    background-color: rgba(146, 97, 24, 0.473);
+    padding: 15px;
+}
+
+.servicos{
+    position: relative;
+    z-index: 2;
+}
+
+.desktop-menu{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgb(146, 97, 24);
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+
+h2{
+    margin: 10px;
+    padding: 10px;
+    font-size: 2vw;
+    color: rgb(86, 62, 27);
+}
+
+p{
+    font-size: 2.1vw;
+    text-align: justify;
+}

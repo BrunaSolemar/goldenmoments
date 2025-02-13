@@ -84,7 +84,7 @@ nav > ul > a{
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex; 
-    font-size: 2vw;
+    font-size: 1.9vw;
     text-align: justify;
     background-color: rgba(146, 97, 24, 0.171);
   
