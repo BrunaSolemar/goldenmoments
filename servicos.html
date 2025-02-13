@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden Moments Eventos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
+
+    <header>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+     
+        <nav class="desktop-menu">
+            <ul>
+                <a href="sobrenos.html">Sobre Nós</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="depoimentos.html">Depoimentos</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </ul>
+        </nav>
+    </header>
+    
     <h1>Conheça Nossos Serviços</h1>
+
+
+
+    <script>
+        function mudouTamanho(){
+    if(window.innerWidth >= 768){
+        document.getElementById('itens').style.display = 'block';
+        document.querySelector('nav.desktop-menu').style.display = 'block';
+        document.getElementById('burguer').style.display = 'none'; // Adicionado
+    }else{
+        document.getElementById('itens').style.display = 'none';
+        document.querySelector('nav.desktop-menu').style.display = 'none';
+        document.getElementById('burguer').style.display = 'block'; // Adicionado
+    }
+}
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display ='block'
+            }
+        }
+    </script>
 </body>
+
 </html>
+
+<style>
+   
+    /* Media Query para telas menores que 768px (tablets) */
+    @media screen and (min-width: 780px) {
+        span#burguer{
+            display: none;
+        }
+        menu{
+            display: none;
+        }
+        nav.desktop-menu{
+            display: block;
+        }
+        
+    }
+    
+    @media screen and (max-width: 779px) {
+        body{
+            font-size: 14px;
+        }
+        div.texto{
+            font-size: 10vw;
+        }
+        nav.desktop-menu{
+            display: none;
+        }
+        menu{
+            display: none;
+        }
+        
+    }
+
+    </style>
