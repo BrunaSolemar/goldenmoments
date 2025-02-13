@@ -14,7 +14,7 @@
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
-                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="depoimentos.html">Depoimentos</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
@@ -24,7 +24,7 @@
      
         <nav class="desktop-menu">
             <ul>
-                <a href="sobrenos.html">Sobre Nós</a>
+                <a href="index.html">Home</a>
                 <a href="servicos.html">Serviços</a>
                 <a href="depoimentos.html">Depoimentos</a>
                 <a href="galeria.html">Galeria</a>
@@ -59,6 +59,7 @@
     }
 }
         function clickMenu(){
+            var menu = document.getElementById('itens')
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
             } else {
@@ -85,7 +86,7 @@
 
 @media screen and (max-width: 779px) {
     body{
-        font-size: 14xp;
+        font-size: 14px;
     }
     div.texto{
         font-size: 10vw;
