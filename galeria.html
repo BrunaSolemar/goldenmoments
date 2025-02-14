@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Moments Eventos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/galeria.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+     
+        <nav class="desktop-menu">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="sobrenos.html">Sobre Nós</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="depoimentos.html">Depoimentos</a>
+                
+                <a href="contato.html">Contato</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Confira Nossas Fotos</h1>
+
+    <section class="imagens">
+        <img src="3.jpg" alt="">
+        <img src="4.jpg" alt="">
+        <img src="5.jpg" alt="">
+        <img src="6.jpg" alt="">
+        <img src="9.jpeg" alt="">
+        <img src="10.jpeg" alt="">
+        <img src="11.jpeg" alt="">
+        <img src="12.jpg" alt="">
+        <img src="13.jpeg" alt="">
+        <img src="14.jpg" alt="">
+        <img src="15.jpeg" alt="">
+        <img src="16.jpg" alt="">
+        <img src="17.jpg" alt="">
+        <img src="18.jpg" alt="">
+        <img src="19.jpeg" alt="">
+    </section>
+
+
+
+
+    <script>
+        function mudouTamanho(){
+    if(window.innerWidth >= 768){
+        document.getElementById('itens').style.display = 'block';
+        document.querySelector('nav.desktop-menu').style.display = 'block';
+        document.getElementById('burguer').style.display = 'none'; // Adicionado
+    }else{
+        document.getElementById('itens').style.display = 'none';
+        document.querySelector('nav.desktop-menu').style.display = 'none';
+        document.getElementById('burguer').style.display = 'block'; // Adicionado
+    }
+}
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display ='block'
+            }
+        }
+    </script>
+</body>
+<style>
+    
+/* Media Query para telas menores que 768px (tablets) */
+@media screen and (min-width: 780px) {
+    span#burguer{
+        display: none;
+    }
+    menu{
+        display: none;
+    }
+    nav.desktop-menu{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 779px) {
+    body{
+        font-size: 14xp;
+    }
+    div.texto{
+        font-size: 10vw;
+    }
+    nav.desktop-menu{
+        display: none;
+    }
+    menu{
+        display: none;
+    }
+    
+}
+
+</style>
+</html>

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;  
+    background-color: blanchedalmond;
+}
+
+
+header{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: blanchedalmond;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    font-size: 23px;
+      
+}
+
+h1{
+    
+    font-size: 2.8vw;
+    text-align: center;
+    color: rgb(86, 62, 27);
+    background-color: rgba(146, 97, 24, 0.507);
+    padding: 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.imagens{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 30px;
+}
+
+.imagens img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.imagens img:hover {
+    transform: scale(2); /* Aumenta a imagem em 20% */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao redor */
+}
+
+
+nav > ul > a{
+    padding-left: 70px;
+    color: rgb(86, 62, 27);
+}
+
+span#burguer{
+    background-color: rgb(228, 139, 5);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+span#burguer:hover{
+    background-color: wheat;
+    color: black;
+}
+
+menu{
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
