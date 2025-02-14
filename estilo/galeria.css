@@ -53,7 +53,7 @@ h1{
 }
 
 .imagens img:hover {
-    transform: scale(2); /* Aumenta a imagem em 20% */
+    transform: scale(1.5); /* Aumenta a imagem em 20% */
     cursor: pointer; /* Muda o cursor para indicar interatividade */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao redor */
 }
